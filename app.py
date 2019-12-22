@@ -7,6 +7,8 @@ from marshmallow import ValidationError
 from db import db
 from ma import ma
 
+from config import HELLO_WORLD
+
 app = Flask(__name__)
 
 api = Api(app, prefix="/api/v1")
@@ -19,7 +21,7 @@ CORS(app, resources=r"/api/*", allow_headers="Content-Type")
 
 @app.route('/')
 def hello_world():
-    return 'iLaw Chatbot Hello World 1.0.0..!!'
+    return f"iLaw Chatbot Hello World {HELLO_WORLD}..!!"
 
 
 if __name__ == '__main__':
