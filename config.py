@@ -2,7 +2,7 @@ import os
 import urllib
 
 DEBUG = True
-HELLO_WORLD = "v1.0.0"
+HELLO_WORLD = "v1.0.1"
 DATABASE_HOST = os.environ.get("DATABASE_HOST")
 DATABASE_NAME = os.environ.get("DATABASE_NAME")
 DATABASE_USER = os.environ.get("DATABASE_USER")
